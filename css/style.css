@@ -24,6 +24,7 @@ svg {
 body {
   font-family: "Open Sans", sans-serif;
   color: #747373;
+  position: relative;
   background-color: #f7f5f5; }
 
 p {
@@ -40,17 +41,17 @@ header {
   background-image: url(../img/bg02.jpg);
   background-repeat: no-repeat;
   background-size: cover;
-  -webkit-background-size: cover;
--moz-background-size: cover;
--o-background-size: cover;
   background-attachment: fixed;
   background-position: center right; }
+  @media (max-width: 768px) {
+    header {
+      background-attachment: scroll; } }
 
 button, input[type=submit] {
   cursor: pointer; }
 
 section {
-  padding: 50px 0; }
+  padding: 40px 0; }
 
 .mobile-menu {
   display: none;
@@ -312,10 +313,11 @@ nav {
           font-size: 1rem; } }
   .contact-us button {
     position: absolute;
-    top: calc(50% + 40px);
+    bottom: -20px;
     margin: 0 auto;
     left: 0;
-    right: 0; }
+    right: 0;
+    width: 200px; }
 
 .contact-btn {
   box-shadow: 0 1px 0 #af8706;
@@ -420,14 +422,17 @@ nav {
   animation: rotate 8s linear infinite; }
 
 #counters {
-  padding: 80px 0;
-  background-image: url(../img/bg04.jpg);
-  background-position: left center;
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-attachment: fixed;
+  padding: 40px 0;
+  background-color: #191919;
   display: flex;
   justify-content: center; }
+  @media (min-width: 768px) {
+    #counters {
+      background-image: url(../img/bg04.jpg);
+      background-position: left center;
+      background-size: cover;
+      background-repeat: no-repeat;
+      background-attachment: fixed; } }
   #counters .row {
     justify-content: space-around; }
   #counters .section-boxes {
@@ -494,11 +499,10 @@ nav {
       display: block; } }
 
 .quote {
-  background-color: #ddd;
+  background-color: #e7e7e7;
   padding: 15px 20px 15px 55px;
   font-style: italic;
   color: #9c9c9c;
-  box-shadow: 0 2px 3px 0 rgba(39, 41, 48, 0.08);
   border-radius: 2px;
   position: relative; }
   .quote:before {
@@ -513,7 +517,7 @@ nav {
     content: "";
     border-left: 20px solid transparent;
     border-top: 20px solid transparent;
-    border-right: 20px solid #ddd;
+    border-right: 20px solid #e7e7e7;
     border-bottom: 20px solid transparent;
     position: absolute;
     bottom: -20px;
