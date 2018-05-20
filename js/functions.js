@@ -103,8 +103,6 @@ $( document ).ready(function() {
 
   })
 
-
-
 // scrolling
     $(window).scroll(function() {
       var hScroll = $(this).scrollTop();
@@ -268,24 +266,6 @@ function scrollToPos(divTo) {
      slider.click(i+1)
    });
  })
-
-  // var sliderLimit = 2;
-  // var currentSlider = 0;
-  // var x = setInterval(function() {
-  //
-  //   if(currentSlider === sliderLimit) currentSlider = 0;
-  //   for (var i = 0; i < sliderLimit; i++) {
-  //       if(i===currentSlider) {
-  //         $('#quote-id-'+i).css({'display':'flex'});
-  //         $('#quote-id-'+i).animate({opacity:'1',left:'0'},800);
-  //         $('.quote-nav li').eq(i).removeClass('nav-bar').addClass('nav-bar-activ');
-  //       } else {
-  //         $('#quote-id-'+i).css({'display':'none','opacity':'0','left':'-170px'});
-  //         $('.quote-nav li').eq(i).removeClass('nav-bar-active').addClass('nav-bar')
-  //       }
-  //   }
-  //   currentSlider++;
-  // },6000);
 
 // functions
 function fadeWithMove(element,duration) {
